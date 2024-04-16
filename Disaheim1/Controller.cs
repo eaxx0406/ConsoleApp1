@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Disaheim1.Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,15 +17,11 @@ namespace Disaheim1
 
         public Controller()
         {
-            Books = new List<Book>();
+           
             Course = new List<Course>();
         }
       
-        public void AddToList(Book book)
-        {
-            Books.Add(book);
-        }
-
+     
         public void AddToList(Course course)
         {
             Course.Add(course);

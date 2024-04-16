@@ -3,46 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Disaheim1.Repository
 {
     public class CourseRepository
     {
-        public List<Course> Courses { get; set; }
+        public List<Course> courses = new List<Course>();
 
-        public void AddCourse(Course course) { }
+        public void AddCourse(Course course) 
+        {
+            courses.Add(course);
+        }
 
         public Course GetCourse(string name)
         {
-            foreach (Course course in Courses)
+            Course course = courses.FirstOrDefault(c => c.Name == name);
+
+            if (course != null)
             {
-                if (course.Name == name) { return course; }
-
+                return course;
             }
-            return null;
-
+            return course;
         }
+
         public double GetTotalValue()
         {
-
             double totalValue = 0;
 
-            foreach (Course course in Courses)
+            foreach (Course course in this.courses)
             {
-                // double value = Utility.GetValueOfAmulet();
                 double value = 0;
+               // value = Utility.GetValueOfAmulet();
+                
                 totalValue += value;
             }
 
             return totalValue;
-
-        
         }
-            
-
-
-
-
     }
-
-}      
+}

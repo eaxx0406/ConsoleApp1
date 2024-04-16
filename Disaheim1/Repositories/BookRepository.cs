@@ -8,28 +8,28 @@ namespace Disaheim1.Repository
 {
     public class BookRepository
     {
-        public List<Book> Books { get; set; }
+        public List<Book> books = new List<Book>();
 
         public void AddBook(Book book)
         {
-            Books.Add(book);
+            this.books.Add(book);
         }
         public Book GetBook(string itemId)
+        {
+            Book book = books.FirstOrDefault(c => c.ItemId == itemId);
 
-        { 
-            foreach (Book book in Books) 
+            if (book != null)
             {
-                if (book.ItemId == itemId) ;
-               return book;
+                return book;
             }
-            return null;
-
+            return book;
         }
+
         public double GetTotalValue()
         {
             double totalValue = 0;
 
-            foreach (Book book in Books)
+            foreach (Book book in books)
             {
                 // double value = Utility.GetValueOfAmulet();
                 double value = 0;

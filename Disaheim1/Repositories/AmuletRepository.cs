@@ -9,16 +9,16 @@ namespace Disaheim1.Repository
 {
     public class  AmuletRepository
     {
-        public List<Amulet> Amulets { get; set; }
+        public List<Amulet> amulets = new List<Amulet>();
 
         public void AddAmulet(Amulet amulet)
         {
-            Amulets.Add(amulet);
+            amulets.Add(amulet);
         }
 
-        public Amulet GetAmulet(string itemid)
+        public  Amulet GetAmulet(string itemid)
         {
-            Amulet amulet = Amulets.FirstOrDefault(c => c.ItemId == itemid);
+            Amulet amulet = amulets.FirstOrDefault(c => c.ItemId == itemid);
 
             if (amulet != null)
             {
@@ -26,11 +26,11 @@ namespace Disaheim1.Repository
             }
             return amulet;
         }
-        public  double GetTotalValue()
+        public double GetTotalValue()
         {
             double totalValue = 0;
 
-            foreach (Amulet amulet in Amulets)
+            foreach (Amulet amulet in amulets)
             {
                 // double value = Utility.GetValueOfAmulet();
                 double value = 0;

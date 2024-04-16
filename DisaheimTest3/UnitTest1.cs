@@ -71,7 +71,7 @@ namespace DisaheimTest3
 
             // Assert
 
-            Assert.AreEqual(b3, controller.Books[2]);
+            Assert.AreEqual(b3, controller.books[2]);
 
         }
 
@@ -83,7 +83,7 @@ namespace DisaheimTest3
 
             // Assert
 
-            Assert.AreEqual(a1, controller.Amulets[0]);
+            Assert.AreEqual(a1, controller.amulets[0]);
 
         }
         [TestMethod]

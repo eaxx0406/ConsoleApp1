@@ -7,7 +7,8 @@ namespace Disaheim1
         static void Main(string[] args)
         {
            // AmuletRepository amuletRepository = new AmuletRepository();
-           
+           BookRepository bookRepository = new BookRepository();
+
             Console.WriteLine("Hello, World!");
         }
     }
