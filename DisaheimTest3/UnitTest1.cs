@@ -6,7 +6,7 @@ namespace DisaheimTest3
     public class UnitTest3
 
     {
-        /*
+        
         Book b1, b2, b3;
 
         Amulet a1, a2, a3;
@@ -100,7 +100,7 @@ namespace DisaheimTest3
 
             Assert.AreEqual(c3, controller.Course[2]);
 
-        }*/
+        }
 
     }
 }

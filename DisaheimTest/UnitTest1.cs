@@ -194,11 +194,11 @@ namespace DisaheimTest
 
             {
 
-            // Arrange
+            //// Arrange
 
             //Merchandise m = new Merchandise("100");
 
-            //// Assert
+            ////// Assert
 
             //Assert.AreEqual("ItemId: 100", m.ToString());
 

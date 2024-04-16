@@ -8,155 +8,156 @@ using UtilityLib;
 
 namespace DisaheimTest
 {
-    
-    //[TestClass]
-    //public class UnitTest2
 
-    //{
+    [TestClass]
+    public class UnitTest2
 
-    //    Book b1, b2, b3;
+    {
 
-    //    Amulet a1, a2, a3;
+        Book b1, b2, b3;
 
-    //    Course c1, c2, c3;
+        Amulet a1, a2, a3;
 
-    //    Utility utility;
+        Course c1, c2, c3;
 
-    //    [TestInitialize]
+        Utility utility;
 
-    //    public void Init()
+        [TestInitialize]
 
-    //    {
+        public void Init()
 
-    //        // Arrange
+        {
 
-    //        b1 = new Book("1");
+            // Arrange
 
-    //        b2 = new Book("2", "Falling in Love with Yourself");
+            b1 = new Book("1");
 
-    //        b3 = new Book("3", "Spirits in the Night", 123.55);
+            b2 = new Book("2", "Falling in Love with Yourself");
 
-    //        a1 = new Amulet("11");
+            b3 = new Book("3", "Spirits in the Night", 123.55);
 
-    //        a2 = new Amulet("12", Level.high);
+            a1 = new Amulet("11");
 
-    //        a3 = new Amulet("13", Level.low, "Capricorn");
+            a2 = new Amulet("12", Level.high);
 
-    //        c1 = new Course("Spådomskunst for nybegyndere");
+            a3 = new Amulet("13", Level.low, "Capricorn");
 
-    //        c2 = new Course("Magi – når videnskaben stopper", 157);
+            c1 = new Course("Spådomskunst for nybegyndere");
 
-    //        c3 = new Course("Et indblik i Helleristning", 180);
+            c2 = new Course("Magi – når videnskaben stopper", 157);
 
-    //        utility = new Utility();
+            c3 = new Course("Et indblik i Helleristning", 180);
 
+            utility = new Utility();
 
-    //    }
 
-    //    [TestMethod]
+        }
 
-    //    public void TestGetValueForBook1()
+        [TestMethod]
 
-    //    {
+        public void TestGetValueForBook1()
 
-    //        // Assert
+        {
 
-    //        Assert.AreEqual(0.0, Utility.GetValueOfBook(b1));
+            // Assert
 
-    //    }
+            Assert.AreEqual(0.0, Utility.GetValueOfBook(b1));
 
-    //    [TestMethod]
+        }
 
-    //    public void TestGetValueForBook2()
+        [TestMethod]
 
-    //    {
+        public void TestGetValueForBook2()
 
-    //        // Assert
+        {
 
-    //        Assert.AreEqual(0.0, Utility.GetValueOfBook(b2));
+            // Assert
 
-    //    }
+            Assert.AreEqual(0.0, Utility.GetValueOfBook(b2));
 
-    //    [TestMethod]
+        }
 
-    //    public void TestGetValueForBook3()
+        [TestMethod]
 
-    //    {
+        public void TestGetValueForBook3()
 
-    //        // Assert
+        {
 
-    //        Assert.AreEqual(123.55, Utility.GetValueOfBook(b3));
+            // Assert
 
-    //    }
+            Assert.AreEqual(123.55, Utility.GetValueOfBook(b3));
 
-    //    [TestMethod]
+        }
 
-    //    public void TestGetValueForAmulet1()
+        [TestMethod]
 
-    //    {
+        public void TestGetValueForAmulet1()
 
-    //        // Assert
+        {
 
-    //        Assert.AreEqual(20.0, Utility.GetValueOfAmulet(a1));
+            // Assert
 
-    //    }
+            Assert.AreEqual(20.0, Utility.GetValueOfAmulet(a1));
 
-    //    [TestMethod]
+        }
 
-    //    public void TestGetValueForAmulet2()
+        [TestMethod]
 
-    //    {
+        public void TestGetValueForAmulet2()
 
-    //        // Assert
+        {
 
-    //        Assert.AreEqual(27.5, Utility.GetValueOfAmulet(a2));
+            // Assert
 
-    //    }
+            Assert.AreEqual(27.5, Utility.GetValueOfAmulet(a2));
 
-    //    [TestMethod]
+        }
 
-    //    public void TestGetValueForAmulet3()
+        [TestMethod]
 
-    //    {
+        public void TestGetValueForAmulet3()
 
-    //        // Assert
+        {
 
-    //        Assert.AreEqual(12.5, Utility.GetValueOfAmulet(a3));
+            // Assert
 
-    //    }
-    //    [TestMethod]
+            Assert.AreEqual(12.5, Utility.GetValueOfAmulet(a3));
 
-    //    public void TestGetValueForCourse1()
+        }
+        [TestMethod]
 
-    //    {
+        public void TestGetValueForCourse1()
 
-    //        // Assert
+        {
 
-    //        Assert.AreEqual(0.0, Utility.GetValueOfCourse(c1));
+            // Assert
 
-    //    }
+            Assert.AreEqual(0.0, Utility.GetValueOfCourse(c1));
 
-    //    [TestMethod]
+        }
 
-    //    public void TestGetValueForCourse2()
+        [TestMethod]
 
-    //    {
+        public void TestGetValueForCourse2()
 
-    //        // Assert
+        {
 
-    //        Assert.AreEqual(2625.0, Utility.GetValueOfCourse(c2));
+            // Assert
 
-    //    }
+            Assert.AreEqual(2625.0, Utility.GetValueOfCourse(c2));
 
-    //    [TestMethod]
+        }
 
-    //    public void TestGetValueForCourse3()
+        [TestMethod]
 
-    //    {
+        public void TestGetValueForCourse3()
 
-    //        // Assert
+        {
 
-    //        Assert.AreEqual(2625.0, Utility.GetValueOfCourse(c3));
-    //    }
+            // Assert
+
+            Assert.AreEqual(2625.0, Utility.GetValueOfCourse(c3));
+        }
 
     }
+}
