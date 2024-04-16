@@ -14,8 +14,8 @@ namespace Disaheim1
             return book.Price;
         }
 
-        public static double GetValueOfAmulet(Amulet amulet)
-        { 
+        public double GetValueOfAmulet(Amulet amulet)
+        {
             switch (amulet.Quality)
             {
                 case Level.medium:
@@ -28,6 +28,7 @@ namespace Disaheim1
                     return 0;
             }
         }
+
         public static double GetValueOfCourse(Course course)
         {
             double hours = course.DurationInMinutes / 60 ;

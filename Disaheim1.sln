@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisaheimTest2", "DisaheimTe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisaheimTest3", "DisaheimTest3\DisaheimTest3.csproj", "{A373A441-97E9-4EBC-AC7F-88FF2FEB0B39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityLib", "UtilityLib\UtilityLib.csproj", "{E16AD1C8-1098-41F3-A106-9FB5008B76CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilityLib", "UtilityLib\UtilityLib.csproj", "{E16AD1C8-1098-41F3-A106-9FB5008B76CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject4", "TestProject4\TestProject4.csproj", "{7071BBAB-27D4-4215-B9D7-8094E3FA2791}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E16AD1C8-1098-41F3-A106-9FB5008B76CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E16AD1C8-1098-41F3-A106-9FB5008B76CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E16AD1C8-1098-41F3-A106-9FB5008B76CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7071BBAB-27D4-4215-B9D7-8094E3FA2791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7071BBAB-27D4-4215-B9D7-8094E3FA2791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7071BBAB-27D4-4215-B9D7-8094E3FA2791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7071BBAB-27D4-4215-B9D7-8094E3FA2791}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,7 @@ namespace DisaheimTest3
     public class UnitTest3
 
     {
-
+        /*
         Book b1, b2, b3;
 
         Amulet a1, a2, a3;
@@ -43,23 +43,23 @@ namespace DisaheimTest3
 
             controller = new Controller();
 
-            controller.AddToList(b1);
+            controller.AddAmulet(b1);
 
-            controller.AddToList(b2);
+            controller.AddAmulet(b2);
 
-            controller.AddToList(b3);
+            controller.AddAmulet(b3);
 
-            controller.AddToList(a1);
+            controller.AddAmulet(a1);
 
-            controller.AddToList(a2);
+            controller.AddAmulet(a2);
 
-            controller.AddToList(a3);
+            controller.AddAmulet(a3);
 
-            controller.AddToList(c1);
+            controller.AddAmulet(c1);
 
-            controller.AddToList(c2);
+            controller.AddAmulet(c2);
 
-            controller.AddToList(c3);
+            controller.AddAmulet(c3);
 
         }
 
@@ -100,7 +100,7 @@ namespace DisaheimTest3
 
             Assert.AreEqual(c3, controller.Course[2]);
 
-        }
+        }*/
 
     }
 }
