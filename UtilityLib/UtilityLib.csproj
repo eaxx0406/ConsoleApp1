@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Disaheim1\Disaheim1.csproj" />
+    <ProjectReference Include="..\DisaheimTest3\DisaheimTest3.csproj" />
+    <ProjectReference Include="..\DisaheimTest\DisaheimTest.csproj" />
+  </ItemGroup>
+
+</Project>
