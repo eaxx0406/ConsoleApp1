@@ -31,8 +31,7 @@ namespace Disaheim1.Repository
 
             foreach (Book book in books)
             {
-                // double value = Utility.GetValueOfAmulet();
-                double value = 0;
+                double value = Utility.GetValueOfBook(book);
                 totalValue += value;
             }
             return totalValue;

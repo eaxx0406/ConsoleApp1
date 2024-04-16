@@ -32,8 +32,7 @@ namespace Disaheim1.Repository
 
             foreach (Amulet amulet in amulets)
             {
-                // double value = Utility.GetValueOfAmulet();
-                double value = 0;
+                double value = Utility.GetValueOfAmulet(amulet);
                 totalValue += value;
             }
 

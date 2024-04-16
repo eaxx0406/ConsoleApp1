@@ -31,10 +31,10 @@ namespace Disaheim1.Repository
         {
             double totalValue = 0;
 
-            foreach (Course course in this.courses)
+            foreach (Course course in courses)
             {
                 double value = 0;
-               // value = Utility.GetValueOfAmulet();
+                value = Utility.GetValueOfCourse(course);
                 
                 totalValue += value;
             }
