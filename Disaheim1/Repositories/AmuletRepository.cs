@@ -26,7 +26,7 @@ namespace Disaheim1.Repository
             }
             return amulet;
         }
-        public  double GetValueOfAmulet()
+        public  double GetTotalValue()
         {
             double totalValue = 0;
 
