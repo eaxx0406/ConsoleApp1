@@ -8,7 +8,9 @@ namespace Disaheim1
 {
     public class Amulet : Merchandise
     {
-
+        private static double LowQualityValue = 12.5;
+        private static double MediumQualityValue = 20.0;
+        private static double HighQualityValue = 27.5;
 
         private string _itemId;
         private string _design;

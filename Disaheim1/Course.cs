@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Disaheim1
 {
-    public class Course
+    public class Course: IValuable
     {
+        public static double CourseHourValue = 875.0; 
         public string Name;
         public int DurationInMinutes;
 
@@ -21,10 +22,21 @@ namespace Disaheim1
             Name = name;
             DurationInMinutes = durationInMinutes;
         }
-        //Expected:<Name: How to Ying-Yang, Duration in Minutes: 413>. Actual:<Course: How to Ying-Yang, DurationInMinutes: 413>
+
+        public double GetValue()
+        {
+            double hours = DurationInMinutes / 60;
+            int minuts = DurationInMinutes % 60;
+            if (minuts > 0)
+                hours++;
+
+            return (hours * CourseHourValue);
+
+        }
+
         public virtual string ToString()
         {
-            return $"Name: {Name}, Duration in Minutes: {DurationInMinutes}";
+            return $"Name: {Name}, Duration in Minutes: {DurationInMinutes}, Value: {this.GetValue()}";
 
         }
     }
