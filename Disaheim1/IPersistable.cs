@@ -8,11 +8,7 @@ namespace Disaheim1
 {
     internal interface IPersistable
     {
-        void Save();
-
         void Save(string fileName);
-
-        void Load();
 
         void Load(string fileName);
     }
