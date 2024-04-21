@@ -39,7 +39,35 @@ namespace Disaheim1
             return (hours * 875);
         }
         
+        public static double GetValueofMerchandise(Merchandise merchandise) 
+        {
+            Book book = null;
+            Amulet amulet = null;
 
-    
+            if (merchandise.GetType() == typeof(Amulet)) 
+            {
+                switch (amulet.Quality)
+                {
+                    case Level.medium:
+                        return 20;
+                    case Level.low:
+                        return 12.5;
+                    case Level.high:
+                        return 27.5;
+                    default:
+                        return 0;
+                }
+            }
+
+            else if (merchandise.GetType() == typeof(Amulet)) 
+            {
+                Console.WriteLine("bog");
+                return book.Price;
+            }
+
+            return 0;
+        }
+
+
     }
 }
