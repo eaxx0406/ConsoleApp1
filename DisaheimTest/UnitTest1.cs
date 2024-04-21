@@ -194,16 +194,17 @@ namespace DisaheimTest
 
             {
 
+            //Denne test giver ikke længere mening da Merchandise er en abstract klasse og skal udkommenteres (se opgave 3,1 uge 15_2)
             //// Arrange
 
             //Merchandise m = new Merchandise("100");
 
-            ////// Assert
+            //// Assert
 
             //Assert.AreEqual("ItemId: 100", m.ToString());
 
         }
 
 
-     }
+    }
     }
