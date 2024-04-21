@@ -9,6 +9,7 @@ namespace Disaheim1
     public class Course: IValuable
     {
         public static double CourseHourValue = 875.0; 
+
         public string Name;
         public int DurationInMinutes;
 
