@@ -18,9 +18,11 @@ namespace DisaheimTest
 
         CourseRepository courses;
 
-        BookRepository books;
+        //BookRepository books;
 
-        AmuletRepository amulets;
+        //AmuletRepository amulets;
+
+        MerchandiseRepository merchandises;
 
         [TestInitialize]
 
@@ -48,23 +50,25 @@ namespace DisaheimTest
 
             courses = new CourseRepository();
 
-            books = new BookRepository();
+            //books = new BookRepository();
 
-            amulets = new AmuletRepository();
+            //amulets = new AmuletRepository();
+
+            merchandises = new MerchandiseRepository();
 
             // Act
 
-            books.AddBook(b1);
+            merchandises.AddMerchandise(b1);
 
-            books.AddBook(b2);
+            merchandises.AddMerchandise(b2);
 
-            books.AddBook(b3);
+            merchandises.AddMerchandise(b3);
 
-            amulets.AddAmulet(a1);
+            merchandises.AddMerchandise(a1);
 
-            amulets.AddAmulet(a2);
+            merchandises.AddMerchandise(a2);
 
-            amulets.AddAmulet(a3);
+            merchandises.AddMerchandise(a3);
 
             courses.AddCourse(c1);
 
@@ -80,7 +84,7 @@ namespace DisaheimTest
 
             // Assert
 
-            Assert.AreEqual(b2, books.GetBook("2"));
+            Assert.AreEqual(b2, merchandises.GetMerchandise("2"));
 
         }
 
@@ -92,7 +96,7 @@ namespace DisaheimTest
 
             // Assert
 
-            Assert.AreEqual(a3, amulets.GetAmulet("13"));
+            Assert.AreEqual(a3, merchandises.GetMerchandise("13"));
 
         }
 
@@ -108,27 +112,16 @@ namespace DisaheimTest
 
         }
 
+
         [TestMethod]
 
-        public void TestGetTotalValueForBook()
+        public void TestGetTotalValueForMerChandise()
 
         {
 
             // Assert
 
-            Assert.AreEqual(123.55, books.GetTotalValue());
-
-        }
-
-        [TestMethod]
-
-        public void TestGetTotalValueForAmulet()
-
-        {
-
-            // Assert
-
-            Assert.AreEqual(60.0, amulets.GetTotalValue());
+            Assert.AreEqual(183.55, merchandises.GetTotalValue());
 
         }
 

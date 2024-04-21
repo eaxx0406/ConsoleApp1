@@ -6,42 +6,42 @@ using System.Threading.Tasks;
 
 namespace Disaheim1.Repository
 {
-    public class BookRepository
-    {
-        public List<Book> books = new List<Book>();
+    //public class BookRepository
+    //{
+    //    public List<Book> books = new List<Book>();
 
-        public void AddBook(Book book)
-        {
-            this.books.Add(book);
-        }
-        public Book GetBook(string itemId)
-        {
-            Book book = books.FirstOrDefault(c => c.ItemId == itemId);
+    //    public void AddBook(Book book)
+    //    {
+    //        this.books.Add(book);
+    //    }
+    //    public Book GetBook(string itemId)
+    //    {
+    //        Book book = books.FirstOrDefault(c => c.ItemId == itemId);
 
-            if (book != null)
-            {
-                return book;
-            }
-            return book;
-        }
+    //        if (book != null)
+    //        {
+    //            return book;
+    //        }
+    //        return book;
+    //    }
 
-        public double GetTotalValue()
-        {
-            double totalValue = 0;
+    //    public double GetTotalValue()
+    //    {
+    //        double totalValue = 0;
 
-            foreach (Book book in books)
-            {
-                double value = Utility.GetValueOfBook(book);
-                totalValue += value;
-            }
-            return totalValue;
+    //        foreach (Book book in books)
+    //        {
+    //            double value = Utility.GetValueOfBook(book);
+    //            totalValue += value;
+    //        }
+    //        return totalValue;
          
 
-        }
+    //    }
 
 
 
 
 
-    }
+    //}
 }

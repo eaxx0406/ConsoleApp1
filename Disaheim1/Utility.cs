@@ -46,6 +46,7 @@ namespace Disaheim1
 
             if (merchandise.GetType() == typeof(Amulet)) 
             {
+                amulet = (Amulet)merchandise;
                 switch (amulet.Quality)
                 {
                     case Level.medium:
@@ -59,8 +60,9 @@ namespace Disaheim1
                 }
             }
 
-            else if (merchandise.GetType() == typeof(Amulet)) 
+            else if (merchandise.GetType() == typeof(Book)) 
             {
+                book = (Book)merchandise;
                 Console.WriteLine("bog");
                 return book.Price;
             }
