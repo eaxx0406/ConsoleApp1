@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Disaheim1
+namespace Disaheim1.Classes
 {
-    public class Course: IValuable
+    public class Course : IValuable
     {
-        public static double CourseHourValue = 875.0; 
+        public static double CourseHourValue = 875.0;
 
         public string Name;
         public int DurationInMinutes;
 
-        public Course (string name)
-        { 
-            Name = name; 
+        public Course(string name)
+        {
+            Name = name;
         }
 
         public Course(string name, int durationInMinutes)
@@ -31,13 +31,13 @@ namespace Disaheim1
             if (minuts > 0)
                 hours++;
 
-            return (hours * CourseHourValue);
+            return hours * CourseHourValue;
 
         }
 
         public virtual string ToString()
         {
-            return $"Name: {Name}, Duration in Minutes: {DurationInMinutes}, Value: {this.GetValue()}";
+            return $"Name: {Name}, Duration in Minutes: {DurationInMinutes}, Value: {GetValue()}";
 
         }
     }

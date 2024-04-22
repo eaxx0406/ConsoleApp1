@@ -1,4 +1,5 @@
-﻿using Disaheim1.Repositories;
+﻿using Disaheim1.Classes;
+using Disaheim1.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -84,7 +85,7 @@ namespace Disaheim1.Repositories
                 }
             }
 
-            using (StreamWriter outputFile = new StreamWriter( filepath))
+            using (StreamWriter outputFile = new StreamWriter(filepath))
             {
                 foreach (string line in lines)
                 {
@@ -96,11 +97,8 @@ namespace Disaheim1.Repositories
         }
         public void Load(string filepath = "ValuableRepository.txt")
         {
-            //Pass the file path and file name to the StreamReader constructor
-            StreamReader sr = new StreamReader(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), filepath));
-            //Read the first line of text
+            StreamReader sr = new StreamReader(filepath);
             string line = sr.ReadLine();
-            //Continue to read until you reach end of file
             while (line != null)
             {
                 //split ved semikolon
@@ -133,10 +131,8 @@ namespace Disaheim1.Repositories
 
                     valuables.Add(new Course(name, duration));
                 }
-                //Read the next line
                 line = sr.ReadLine();
             }
-            //close the file
             sr.Close();
         }
     }

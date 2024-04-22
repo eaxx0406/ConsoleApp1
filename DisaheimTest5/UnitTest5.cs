@@ -1,13 +1,11 @@
 using System.Reflection.Emit;
 using Disaheim1;
+using Disaheim1.Classes;
 using Disaheim1.Repositories;
 
 namespace DisaheimTest5
 {
     [TestClass]
-    public class UnitTest1
-    {
-        [TestClass]
 
         public class UnitTest5
 
@@ -400,7 +398,7 @@ namespace DisaheimTest5
 
                 repo.AddValuable(dummy2);
 
-                Book result = (Book)repo.GetValuable("Dummy 2");
+                var result = (Book)repo.GetValuable("Dummy 2");
 
                 // Assert
 
@@ -425,5 +423,5 @@ namespace DisaheimTest5
             }
 
         }
-    }
+    
 }

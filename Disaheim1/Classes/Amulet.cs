@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Disaheim1
+namespace Disaheim1.Classes
 {
     public class Amulet : Merchandise
     {
@@ -16,7 +16,7 @@ namespace Disaheim1
         private string _design;
         private Level _quality;
 
-      
+
         public string Design
         {
             get { return _design; }
@@ -33,24 +33,40 @@ namespace Disaheim1
 
         public Amulet(string itemId)
         {
-            this.ItemId = itemId;
+            ItemId = itemId;
         }
 
         public Amulet(string itemId, Level quality)
         {
-            this.ItemId = itemId;
-            this.Quality = quality;
+            ItemId = itemId;
+            Quality = quality;
         }
         public Amulet(string itemId, Level quality, string design)
         {
-            this.ItemId = itemId;
-            this.Quality = quality;
-            this.Design = design;
+            ItemId = itemId;
+            Quality = quality;
+            Design = design;
 
         }
         public override string ToString()
         {
             return $"ItemId: {ItemId}, Quality: {Quality}, Design: {Design}";
+        }
+
+        public override double GetValue()
+        {
+            switch (Quality)
+            {
+                case Level.medium:
+                    return MediumQualityValue;
+                case Level.low:
+                    return LowQualityValue;
+                case Level.high:
+                    return HighQualityValue;
+                default:
+                    return 0;
+            }
+
         }
     }
 

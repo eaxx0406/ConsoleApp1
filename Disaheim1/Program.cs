@@ -1,4 +1,5 @@
-﻿using Disaheim1.Repositories;
+﻿using Disaheim1.Classes;
+using Disaheim1.Repositories;
 
 namespace Disaheim1
 {

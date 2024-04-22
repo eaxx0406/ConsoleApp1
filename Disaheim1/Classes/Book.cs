@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Disaheim1
+namespace Disaheim1.Classes
 {
     public class Book : Merchandise
     {
         private string _title;
         private double _price;
 
-        
+
         public string Title
         {
             get { return _title; }
@@ -25,23 +25,28 @@ namespace Disaheim1
 
         public Book(string itemId)
         {
-            this.ItemId = itemId;
+            ItemId = itemId;
         }
 
         public Book(string itemId, string title)
         {
-            this.ItemId= itemId;
-            this.Title = title;
+            ItemId = itemId;
+            Title = title;
         }
         public Book(string itemId, string title, double price)
         {
-            this.ItemId = itemId;
-            this.Title = title;
-            this.Price = price;
+            ItemId = itemId;
+            Title = title;
+            Price = price;
         }
         public override string ToString()
         {
             return $"ItemId: {ItemId}, Title: {Title}, Price: {Price}";
+        }
+
+        public override double GetValue()
+        {
+            return Price;
         }
     }
 

@@ -1,12 +1,11 @@
 using Disaheim1;
+using Disaheim1.Classes;
 using Disaheim1.Repositories;
 
 namespace DisaheimTest6
 {
+
     [TestClass]
-    public class UnitTest1
-    {
-        [TestClass]
 
         public class UnitTest6
 
@@ -171,5 +170,5 @@ namespace DisaheimTest6
             }
 
         }
-    }
+    
 }
